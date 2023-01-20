@@ -47,11 +47,6 @@ try:
 except URLError as e:
   streamlit.error()
   
-
-
-my_cur = my_cnx.cursor()
-#my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-
 streamlit.header("The fruit load list contains:")
 #special snowflake
 def get_fruit_load_list(my_cnx):
